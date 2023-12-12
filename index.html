@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ホームページへようこそ</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GGBondのホームページへようこそ!</h1>
+        </header>
+        <div class="preface">
+            <div class="row">
+                <div class="col-sm-offset-4 col-sm-2 col-md-offset-4 col-md-2 col-lg-offset-4 col-lg-2">
+                    <img src="img/123.jpg"  alt="画像データ" width="160" height="140" >
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div id="showClock"></div>
+
+                    <div class="motto">
+                        ビジネスに大事なこと<br>
+                        ||<br>
+                        「ほうれんそう」<br>
+                        <span>報（ほう）告</span><br>
+                        <span>連（れん）絡</span><br>
+                        <span>相（そう）談</span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+        <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-10">
+                <h3>【私の自己紹介】</h3>
+                <ul>
+                    <il>好きなこと：ゲームをすることと<br></il>
+                    <il>(特にエルデンリングとダークソウルス)<br></il>
+                    <il>暇なときは：いったなかったところに行くこと </p><br></il>
+
+                    <il>最近よく行くレストラン：ジャルアン  タイ食堂<br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.38332053881!2d139.39126167623436!3d35.568929536134085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018fda6663e1c83%3A0x146cf6c765a5d9d2!2z44K444Oj44Or44Ki44OzIOa3temHjui-uumnheWNl-WPo-W6lw!5e0!3m2!1sja!2sjp!4v1701936702221!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></il>
+                </ul>
+            <h3>趣味</h3>
+            <ul>
+                <li><span>寝坊 学習</span> 旅行、映画鑑賞</li>
+            </ul>
+            <h3>上記のゲームオフィシャルウェブリンク集</h3>
+            <div class="col-sm-4">
+                <img src="img/EldenRing.jpg" alt="画像データ" width="160" height="100">
+            </div>
+            <div class="col-sm-4"><img src="img/DARKSOULS.PNG" alt="画像データ" width="160" height="100"></div>
+                <ul>
+                    <li><a href="https://www.eldenring.jp/index.html"
+                            target="_self">EldenRingエルデンリング</a></li>
+                    <li><a href="https://www.darksouls.jp/"
+                            target="_self">DARK_SOULS_III ダークソウルⅢ</a></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+        <footer class="afterword">
+            <h2>こんな私ですが、どうぞよろしく！</h2>
+        </footer>            
+    </div>
+    <script>
+        var addZero = function(value) {
+            if (value < 10) {
+                value = '0' + value;
+            }
+            return value;
+        };        
+        timerID = setInterval('clock()', 100); 
+        function clock() {
+            document.getElementById("showClock").innerHTML = getNow();
+        }
+        function getNow() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth() + 1; 
+            month = addZero(month);
+            var day = now.getDate();
+            day = addZero(day);
+            var dayOfWeek = now.getDay(); 
+            var hour = now.getHours();
+            hour = addZero(hour);
+            var min = now.getMinutes();
+            min = addZero(min);
+            var sec = now.getSeconds();
+            sec = addZero(sec);
+            var daysOfWeek = new Array("日", "月", "火", "水", "木", "金", "土");
+            var s = "【" + year + "/" + month + "/" + day + " (" + daysOfWeek[dayOfWeek] + ") " + hour + ":" + min + ":" + sec + "】"; 
+            return s;
+        }
+    </script>
+
+</body>
+</html>
