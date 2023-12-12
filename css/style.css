@@ -1,0 +1,87 @@
+body {
+    background-color: #092422; 
+    padding: 10px; 
+    font-size: 18px; 
+    color: #a17e1d; 
+}
+.container {
+    max-width: 830px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 20px rgba(41, 155, 89, 0.9); 
+    background-color: #fff; 
+    border: 1px solid #888;
+    padding: 0;
+}
+header {
+    background-color: #0e0d0d; 
+    padding: 10px; 
+    color: #fff;
+}
+header h1 {
+    margin: 0; 
+    font-size: 24px; 
+    font-weight: normal; 
+    text-align: center; 
+}
+
+.preface p {
+    margin-top: 20px;
+    align-content: center;
+}
+
+#showClock {
+    text-align: center;
+    font-size: 12px;
+    color: #2e4e30;
+}
+
+.preface {
+    text-align: center; 
+    font-size: 16px;
+    margin: 5px;
+}
+.motto {
+    margin: auto;
+    padding: 0;
+    
+}
+.motto span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.information h3 {
+    font-size: 24px;
+    margin: 6px 0 3px 0;
+    padding: 5px 10px; 
+    background-color: #E6E4DD; 
+    border: 1px solid #422814;
+    text-align: center;
+}
+.information h4 {
+    font-size: 50px;
+    text-align: center;
+}
+.information ul {
+    list-style-type: disc;
+    margin: 0; 
+    font-size: 20px;
+    text-align: center;
+}
+.information li {
+    padding: 5 9px; 
+    text-align: left;
+}
+.information li span {
+    text-decoration: line-through;
+}
+footer {
+    
+}
+footer h2 {
+    background-color: #111110; 
+    padding: 10px; 
+    color: #fff; 
+    text-align: center; 
+    font-size: 26px;
+    margin: 0;
+}
